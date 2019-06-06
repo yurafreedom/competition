@@ -1,0 +1,88 @@
+.embed-responsive {
+	max-width:650px;
+	width:100%;
+	margin-bottom:2rem;
+}
+
+h1#project-title {
+	font-size:1.333rem;
+}
+
+.vote {
+	margin:2em 0;
+}
+
+.contestant-name {
+	text-align:center;
+}
+
+#addedFiles > .row {
+	margin-bottom:1em;
+	align-items:center;
+}
+
+#addedFiles .close {
+	color:#ee0707;
+	font-size:1rem;
+	opacity:1!important;
+	margin-right:.4rem;
+	
+}
+
+#addedFiles .upload {
+	display:flex;
+	align-items:center;
+}
+
+#addedFiles .upload:before {
+	font-family:"Font Awesome 5 Free";
+	font-weight:normal;
+	font-size: 2.6rem;
+	margin-right:1em;
+
+}
+
+#addedFiles .upload-doc:before {
+	color: #1f4180;
+	content:"\f1c2";
+}
+
+#addedFiles .upload-ppt:before {
+	color: #d54b32;
+	content:"\f1c4";
+}
+
+#addedFiles .upload-xls:before {
+	color: #0e6f48;
+	content:"\f1c3";
+}
+
+#addedFiles .upload-pdf:before {
+	color: #cb0015;
+	content:"\f1c1";
+}
+
+#addedFiles .upload-img:before {
+	color: #00aaad;
+	content:"\f1c5";
+}
+
+@media screen and (min-width:768px) {
+	h1#project-title {
+		font-size:2rem;
+	}
+	
+	.contestant-photo {
+		margin:0 0 1em;
+	}
+	
+	.contestant-name {
+		text-align:left;
+	}
+	
+	#addedFiles .upload:before {
+		font-size:4rem;
+		line-height:1em;
+	}	
+}
+

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Загрузка проекта</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic" rel="stylesheet">		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">	
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css" integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/regular.css" integrity="sha384-aubIA90W7NxJ+Ly4QHAqo1JBSwQ0jejV75iHhj59KRwVjLVHjuhS3LkDAoa/ltO4" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous">	
+		<link rel="stylesheet" href="styles/styles.css">
+		<link rel="stylesheet" href="styles/projectUpload.css">
+		<link rel="stylesheet" href="styles/tests.css">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>	
+	</head>
+	<body class="gms-contest">
+		<div class="id2">Здесь блок id2</div>
+		<div id="navigation">
+			<nav class="gms-navbar-menu">
+				<ul class="gmsNavbarList">
+				  <li class="nav-item active hidden-xs">
+					<a class="nav-link" href="index1.html#about" target="_blank">О конкурсе</a>
+				  </li>
+				</ul>
+				<ul class="externalItem">
+					<li class="nav-item">
+					<a class="nav-link" href="terms.html" target="_blank">Положение</a>
+				  </li>
+				</ul>
+				<ul class="gmsNavbarList">
+				  <li class="nav-item hidden-xs">
+					<a class="nav-link" href="index1.html#jury" target="_blank">Жюри</a>
+				  </li>
+				  <li class="nav-item hidden-xs">
+					<a class="nav-link" href="index1.html#partners" target="_blank">Партнеры</a>
+				  </li>					  
+				</ul>
+				<a class="btn btn-primary" data-toggle="modal" data-target="#modal">Принять участие</a>
+			</nav>
+		</div>
+		<div class="content-wrapper">
+			<div class="crumbs">
+				<div class="crumbs_item">регистрация <br> участников</div>
+				<div class="crumbs_item">тестирование <br> участников</div>
+				<div class="crumbs_item active">добавление <br> работы</div>
+			</div>
+		</div>
+		<div class="content-wrapper">
+			<div class="test-header">
+					<p class="test-caption"><a class="test-download" href="#">Диплом участника конкурса</a></p>
+					<p class="test-progress">Скачать файл .pdf</p>
+			</div>
+			<div class="test-header">
+					<p class="test-caption"><a class="test-download" href="#">Сертификат об успешном прохождении теоретического этапа</a></p>
+					<p class="test-progress">Скачать файл .pdf</p>
+			</div>
+		</div>
+		<section id="project">
+			<div class="content-wrapper">
+				<h4 class="text-gold project-descript">Опишите свой проект</h4>
+				<p>К&nbsp;каждому полю мы добавили удобные подсказки.</p>
+				<p>Вам необходимо заполнить все поля и&nbsp;нажать кнопку «Сохранить».</p>
+				<p>Вы увидите сообщение «Ваш проект загружен».</p>
+				<p>Сложно заполнить все сразу? Начните сейчас! И в&nbsp;любой момент до&nbsp;1&nbsp;сентября 2019&nbsp;года можете вернуться, скорректировать и&nbsp;дополнить описание своего проекта.</p>
+				<form action="javascript:void(0);" method="post" class="needs-validation" novalidate>				
+					<div class="form-group row">
+						<label for="projectName" class="col-md-3 col-form-label required">Наименование проекта</label>
+						<div class="col-md-9">
+						  <textarea rows="3" required="true" type="textarea" class="form-control" id="projectName" aria-describedby="projectNameHelpBlock"></textarea>
+						  	<div class="invalid-feedback">
+						  Укажите наименование проекта
+						</div>	
+						  <small id="projectNameHelpBlock" class="form-text text-muted">
+						  Например: «Организация клининговой службы на условиях инсорсинга»; «Внедрение бережливых технологий в работу медсестер кабинета забора крови»
+						</small>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="projectPurpose" class="col-md-3 col-form-label required">Цели и задачи проекта</label>
+						<div class="col-md-9">
+						  <textarea rows="5" required="true" type="textarea" class="form-control" id="projectPurpose" aria-describedby="projectPurposeHelpBlock"></textarea>
+						  	<div class="invalid-feedback">
+						  Опишите цели и задачи проекта
+							</div>	
+						  <small id="projectPurposeHelpBlock" class="form-text text-muted">
+						 Например: «Повысить качество уборки», «Сократить время ожидания пациентов у кабинета забора крови»
+						</small>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="projectInvolvement" class="col-md-3 col-form-label required">В чем заключалось Ваше участие в проекте</label>
+						<div class="col-md-9">
+						  <textarea rows="5" required="true" type="textarea" class="form-control" id="projectInvolvement" aria-describedby="projectInvolvementHelpBlock"></textarea>
+						  	<div class="invalid-feedback">
+						  Опишите свое участие в проекте
+							</div>							  
+						  <small id="projectInvolvementHelpBlock" class="form-text text-muted">
+						 Например: «Рассчитали нормы площадей на один моп и на одного уборщика. Апробировали уборочную продукцию. Подобрали соответствующие дозировки для рабочих растворов дезсредств. Выделили и оборудовали специальные помещения под централизованный участок для стирки мопов и подготовки транспортных уборочных тележек. Разработали поэтапный план обучения сотрудников с учетом графика работы и обучили персонал на рабочих местах. Разработали должностные инструкции уборщиков и СОПы»
+						</small>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="projectTerm" class="col-md-3 col-form-label required">Когда проект был реализован</label>
+						<div class="col-md-9">
+						  <input required="true" type="text" class="form-control" id="projectTerm"  aria-describedby="projectDateHelpBlock">
+						  	<div class="invalid-feedback">
+						  Укажите дату
+							</div>
+						  <small id="projectВфеуHelpBlock" class="form-text text-muted">
+						 Например: «В ноябре 2018 года»
+						</small>							
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="projectResult" class="col-md-3 col-form-label required">Результаты проекта</label>
+						<div class="col-md-9">
+						  <textarea rows="5" required="true" type="textarea" class="form-control" id="projectResult" aria-describedby="projectResultHelpBlock"></textarea>
+						  	<div class="invalid-feedback">
+						  Опишите результаты проекта
+							</div>						  
+						  <small id="projectResultHelpBlock" class="form-text text-muted">
+						 Например: «Повысились качество работы младшего персонала и производительность его труда. Возросла удовлетворенность пациентов качеством уборки с 65 до 98 процентов. Появилась возможность поручить сотрудникам дополнительные работы, перераспределить между ними обязанности. Вдвое снизилась потребность в дезсредствах. В 1,5 раза снизился расход воды»
+						</small>
+						</div>
+					</div>								
+					<h4 class="text-gold">Дополнительные материалы</h4>
+					<p>К заполненной форме желательно добавить приложения.</p>
+					<p>В качестве приложений принимаются графики, схемы, таблицы, расчетные данные, примеры программ, буклетов и брошюр, видео- и аудиозаписи, фотографии «было/стало», презентации и др.</p>
+					<div class="form-group row">
+						<label for="urlYouTube" class="col-md-3 col-form-label">Ссылка на&nbsp;видео на&nbsp;Youtube</label>
+						<div class="col-md-9 url">
+						  <input type="url" class="form-control" id="urlYouTube" value="" placeholder="https://">
+						</div>
+					</div>
+					<div id="addedFiles">
+						<div class="row">
+							<div class="col-10 col-sm-11">
+								<div class="upload upload-doc">Организация клининговой.doc</div>
+							</div>
+							<div class="col-2 col-sm-1"><a class="close"><i class="fas fa-times"></i></a></div>							
+						</div>
+						<div class="row">
+							<div class="col-10 col-sm-11">
+								<div class="upload upload-ppt">Организация клининговой.ppt</div>
+							</div>
+							<div class="col-2 col-sm-1"><a class="close"><i class="fas fa-times"></i></a></div>							
+						</div>
+						<div class="row">
+							<div class="col-10 col-sm-11">
+								<div class="upload upload-xls">Организация клининговой.xls</div>
+							</div>
+							<div class="col-2 col-sm-1"><a class="close"><i class="fas fa-times"></i></a></div>							
+						</div>
+						<div class="row">
+							<div class="col-10 col-sm-11">
+								<div class="upload upload-pdf">Организация клининговой.pdf</div>
+							</div>
+							<div class="col-2 col-sm-1"><a class="close"><i class="fas fa-times"></i></a></div>							
+						</div>
+						<div class="row">
+							<div class="col-10 col-sm-11">
+								<div class="upload upload-img">Организация клининговой.jpg</div>
+							</div>
+							<div class="col-2 col-sm-1"><a class="close"><i class="fas fa-times"></i></a></div>					
+						</div>						
+					</div>
+					<div class="form-group row">
+						<label for="fileUpload" class="col-md-3 col-form-label">Дополнительные материалы до&nbsp;2&nbsp;МБ</label>
+						<div class="col-md-9">
+							<div class="fileUpload">
+								<input type="file" id="fileUpload" multiple>
+								<a class="btn btn-secondary">Загрузить</a>			
+							</div>
+						</div>
+					</div>					
+								
+				  <div class="form-group row center-xs">
+					<div class="col">
+					  <button type="submit" class="btn btn-primary">Сохранить</button>
+					</div>
+				  </div>			
+			</div>
+		</section>
+		<section class="errors">
+			<div class="content-wrapper">
+				<p>Еще ошибки</p>
+				<a class="btn btn-danger" data-target="#modalUrlError" data-toggle="modal">Ошибка URL</a>
+				<a class="btn btn-danger" data-target="#modalFileSize" data-toggle="modal">Большой файл</a>
+			</div>
+		</section>
+	<section id="footer">
+		<div class="footer__wrapper" wfd-id="1">
+			<div class="container-fluid" wfd-id="2">
+				<div class="row" wfd-id="7">
+					<div class="col-xs-12 col-sm-8 col-lg-9" wfd-id="12">
+						<!-- BeginOf: Стат блок c id = "site/footerText" -->
+					<div class="StatBlockWidget" wfd-id="14">
+								<div class="FooterTextWidget" wfd-id="15">
+		<p><strong>© 2006–2019 ООО «МЦФЭР»</strong></p>
+		<p><strong>Журнал «Здравоохранение» –<br>практический журнал для главного врача.</strong></p>
+		<p>Все права защищены. Полное или частичное копирование любых материалов сайта возможно только с&nbsp;письменного разрешения редакции журнала «Здравоохранение».<br>Нарушение авторских прав влечет за&nbsp;собой ответственность в&nbsp;соответствии с&nbsp;законодательством РФ.</p>
+		<p>Настоящий сайт не является средством массовой информации. В качестве печатного СМИ журнал «Здравоохранение» зарегистрирован Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор).<br>Свидетельство о регистрации СМИ ПИ № ФС77-64203 от 31.12.2015.</p>
+		</div>                    </div>
+			<!--//EndOf -->
+						<div class="DataProcessingPolicyWidget" wfd-id="13">
+			<a target="_blank" href="https://id2.action-media.ru/l/politika_pd?id=2">Политика обработки персональных данных</a></div>
+					</div>
+
+					<!-- social buttons here -->
+					<div class="col-xs-12 col-sm-4 col-lg-3" wfd-id="8">
+						<div class="social__wrapper" wfd-id="9">
+								<noindex>
+				<div class="social__title" wfd-id="11">
+				Мы в соцсетях        </div>
+				<div class="social__elements" wfd-id="10">
+							<a href="https://www.facebook.com/zdravru" rel="nofollow" class="social__item social facebook" title="Facebook" target="_blank"></a>
+							<a href="https://vk.com/zdravru" rel="nofollow" class="social__item social vk" title="VK" target="_blank"></a>
+							<a href="https://plus.google.com/105646243223642432985/posts" rel="nofollow" class="social__item social googleplus" title="Google+" target="_blank"></a>
+							<a href="https://twitter.com/zdrav_ru" rel="nofollow" class="social__item social twitter" title="Twitter" target="_blank"></a>
+							<a href="https://www.youtube.com/channel/UCVN1h898yPiKbGJFFsYOShw" rel="nofollow" class="social__item social youtube" title="Youtube" target="_blank"></a>
+						</div>
+			</noindex>
+						</div>
+					</div>
+					<!-- //social buttons here -->
+				</div>
+
+			</div>
+		</div>			
+	</section>
+		<!--Принять участие-->
+		<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>			
+			  <div class="modal-header">
+				<h5 class="modal-title">Принять участие в конкурсе могут подписчики и&nbsp;клиенты </h5>
+
+			  </div>
+			  <div class="modal-body">
+				<div class="row">
+					<div class="col-6">						
+						<a href="https://www.proflit.ru/meditsina-i-farmatsiya/zhurnaly/glavnaya-meditsinskaya-sestra-zhurnal-dlya-rukovoditeley-srednego-medpersonala" target="_blank">
+						<img src="images/gms-journal.png">
+						Журнала «Главная медицинская сестра»</a>					
+					</div>
+					<div class="col-6">												
+						<a href="https://vip.1glms.ru/about#partners" target="_blank">
+						<img src="images/gms-tablet.png">
+						Системы «Главная медсестра»</a>
+					</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		<!--Успех: работа загружена-->
+		<div class="modal fade" id="modalSuccess" tabindex="-1" role="dialog" aria-labelledby="fieldError" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>			
+			  <div class="modal-body">
+				<div class="success-message">Ваша работа успешно загружена!</div>
+			  </div>
+			</div>
+		  </div>
+		</div>		
+		
+		<!--Ошибка: не все поля заполнены-->
+		<div class="modal fade modal-error" id="modalFieldError" tabindex="-1" role="dialog" aria-labelledby="fieldError" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>			
+			  <div class="modal-body">
+				<div class="error-message">Не все обязательные поля заполнены.<br>Пожалуйста, заполните все обязательные поля.</div>
+			  </div>
+			</div>
+		  </div>
+		</div>	
+
+		<!--Ошибка: превышен размер файла-->
+		<div class="modal fade modal-error" id="modalFileSize" tabindex="-1" role="dialog" aria-labelledby="fileError" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>			
+			  <div class="modal-body">
+				<div class="error-message">Превышен размер загруженной работы.<br>Размер загружаемой работы не более 2&nbsp;МБ </div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<!--Ошибка: URL Youtube-->
+		<div class="modal fade modal-error" id="modalUrlError" tabindex="-1" role="dialog" aria-labelledby="urlError" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>			
+			  <div class="modal-body">
+				<div class="error-message">Некорректная ссылка на видео.<br>Пожалуйста, пропишите корректную ссылку.</div>
+			  </div>
+			</div>
+		  </div>
+		</div>		
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/script.js"></script>	
+
+	</body>
+</html>

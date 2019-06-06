@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Регистрация</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic" rel="stylesheet">		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">	
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css" integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/regular.css" integrity="sha384-aubIA90W7NxJ+Ly4QHAqo1JBSwQ0jejV75iHhj59KRwVjLVHjuhS3LkDAoa/ltO4" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous">	
+		<link rel="stylesheet" href="styles/styles.css">
+		<link rel="stylesheet" href="styles/projectUpload.css">
+		
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>	
+	</head>
+	<body class="gms-contest">
+		<div class="id2">Здесь блок id2</div>
+		<div id="navigation">
+			<nav class="gms-navbar-menu">
+				<ul class="gmsNavbarList">
+				  <li class="nav-item active hidden-xs">
+					<a class="nav-link" href="index1.html#about" target="_blank">О конкурсе</a>
+				  </li>
+				</ul>
+				<ul class="externalItem">
+					<li class="nav-item">
+					<a class="nav-link" href="terms.html" target="_blank">Положение</a>
+				  </li>
+				</ul>
+				<ul class="gmsNavbarList">
+				  <li class="nav-item hidden-xs">
+					<a class="nav-link" href="index1.html#jury" target="_blank">Жюри</a>
+				  </li>
+				  <li class="nav-item hidden-xs">
+					<a class="nav-link" href="index1.html#partners" target="_blank">Партнеры</a>
+				  </li>					  
+				</ul>
+				<a class="btn btn-primary" data-toggle="modal" data-target="#modal">Принять участие</a>
+			</nav>
+		</div>
+		<div class="content-wrapper">
+			<div class="crumbs">
+				<div class="crumbs_item active">регистрация <br> участников</div>
+				<div class="crumbs_item">тестирование <br> участников</div>
+				<div class="crumbs_item">добавление <br> работы</div>
+			</div>
+		</div>
+		<section id="profile" class="contentSpacing">
+			<div class="content-wrapper">
+				<h1 class="text-gold text-left pl-0">Принять участие в&nbsp;конкурсе</h1>
+				<h4 class="text-gold">Проверьте и&nbsp;дополните данные о&nbsp;себе:</h4>
+
+				<form id="editProfile" action="javascript:void(0);" method="post" class="needs-validation" novalidate>
+					<div class="form-group row">
+						<label for="lastName" class="col-md-3 col-form-label required">Фамилия</label>
+						<div class="col-md-9">
+						  <input required="true" type="text" class="form-control" id="lastName" value="Бердникова">
+							<div class="invalid-feedback">
+							  Укажите фамилию
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="name" class="col-md-3 col-form-label required">Имя</label>
+						<div class="col-md-9">
+						  <input required="true" type="text" class="form-control" id="name" value="Дарья">
+							<div class="invalid-feedback">
+							  Укажите имя
+							</div>						  
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="patName" class="col-md-3 col-form-label required">Отчество</label>
+						<div class="col-md-9">
+						  <input required="true" type="text" class="form-control" id="patName" value="Вячеславовна">
+						  	<div class="invalid-feedback">
+							  Укажите отчество (если есть)
+							</div>
+						</div>
+					</div>	
+				
+				  <div class="form-group row">
+					<label for="email" class="col-md-3 col-form-label required">Email</label>
+					<div class="col-md-9">
+					  <input required="true" type="email" class="form-control" id="email" value="dberdnikova@mcfr.ru">
+						<div class="invalid-feedback">
+						  Укажите корректный e-mail
+						</div>					  
+					</div>
+				  </div>
+				  <div class="form-group row">
+						<label for="position" class="col-md-3 col-form-label required">Регион</label>
+						<div class="col-md-9">
+						  <input required="true" type="text" class="form-control" id="region" value="Москва">
+						<div class="invalid-feedback">
+						  Укажите область, в которой вы проживаете
+						</div>						  
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="position" class="col-md-3 col-form-label required">Должность</label>
+						<div class="col-md-9">
+						  <input required="true" type="text" class="form-control" id="position" value="Старшая медицинская сестра">
+						<div class="invalid-feedback">
+						  Укажите свою должность
+						</div>						  
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="entity" class="col-md-3 col-form-label required">Организация</label>
+						<div class="col-md-9">
+						  <input required="true" type="text" class="form-control" id="entity" value="Название организации">
+						<div class="invalid-feedback">
+						  Укажите свою организацию
+						</div>						  
+						</div>
+					</div>					
+				</form>			
+			</div>	
+		</section>
+		<section id="project">
+			<div class="content-wrapper">
+				<form action="javascript:void(0);" method="post" class="needs-validation" novalidate>
+					<div class="form-group row">
+						<div class="col-12 col-md-8 col-lg-9 pl-0">
+							<p>
+							Не забудьте загрузить фото, коллегам проще будет вас найти и&nbsp;проголосовать за&nbsp;ваш проект. 
+							</p>
+						</div>
+						<div class="col-12 col-md-4 col-lg-3">
+							<div class="profile-photo">
+								<img src="images/contestant.jpg" alt="contestantName">
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="totalRecord" class="col-md-3 col-form-label required">Общий медицинский стаж</label>
+						<div class="col-md-9">
+						  <input required="true" type="text" class="form-control" id="totalRecord" value="20 лет">
+						<div class="invalid-feedback">
+						  Укажите свой общий стаж
+						</div>						  
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="currentRecord" class="col-md-3 col-form-label required">Стаж в занимаемой должности</label>
+						<div class="col-md-9">
+						  <input required="true" type="text" class="form-control" id="currentRecord" value="10 лет">
+						<div class="invalid-feedback">
+						  Укажите свой стаж
+						</div>						  
+						</div>
+					</div>						
+					<div class="form-group row person-data-wrap">
+					  <input required="true" type="checkbox" class="person-data-checkbox">		
+						<label for="currentRecord" class="required person-data">Я даю согласие на обработку своих персональных данных <br> <span>(Cоглашение на обработку персональных данных)</span></label>
+						
+					</div>						
+					
+								
+				  <div class="form-group row center-xs">
+					<div class="col">
+					  <button type="submit" class="btn btn-primary">Я участвую</button>
+					</div>
+				  </div>			
+			</div>
+		</section>
+		<section class="errors">
+			<div class="content-wrapper">
+				<p>Еще ошибки</p>
+				<a class="btn btn-danger" data-target="#modalUrlError" data-toggle="modal">Ошибка URL</a>
+				<a class="btn btn-danger" data-target="#modalFileSize" data-toggle="modal">Большой файл</a>
+			</div>
+		</section>
+	<section id="footer">
+		<div class="footer__wrapper" wfd-id="1">
+			<div class="container-fluid" wfd-id="2">
+				<div class="row" wfd-id="7">
+					<div class="col-xs-12 col-sm-8 col-lg-9" wfd-id="12">
+						<!-- BeginOf: Стат блок c id = "site/footerText" -->
+					<div class="StatBlockWidget" wfd-id="14">
+								<div class="FooterTextWidget" wfd-id="15">
+		<p><strong>© 2006–2019 ООО «МЦФЭР»</strong></p>
+		<p><strong>Журнал «Здравоохранение» –<br>практический журнал для главного врача.</strong></p>
+		<p>Все права защищены. Полное или частичное копирование любых материалов сайта возможно только с&nbsp;письменного разрешения редакции журнала «Здравоохранение».<br>Нарушение авторских прав влечет за&nbsp;собой ответственность в&nbsp;соответствии с&nbsp;законодательством РФ.</p>
+		<p>Настоящий сайт не является средством массовой информации. В качестве печатного СМИ журнал «Здравоохранение» зарегистрирован Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор).<br>Свидетельство о регистрации СМИ ПИ № ФС77-64203 от 31.12.2015.</p>
+		</div>                    </div>
+			<!--//EndOf -->
+						<div class="DataProcessingPolicyWidget" wfd-id="13">
+			<a target="_blank" href="https://id2.action-media.ru/l/politika_pd?id=2">Политика обработки персональных данных</a></div>
+					</div>
+
+					<!-- social buttons here -->
+					<div class="col-xs-12 col-sm-4 col-lg-3" wfd-id="8">
+						<div class="social__wrapper" wfd-id="9">
+								<noindex>
+				<div class="social__title" wfd-id="11">
+				Мы в соцсетях        </div>
+				<div class="social__elements" wfd-id="10">
+							<a href="https://www.facebook.com/zdravru" rel="nofollow" class="social__item social facebook" title="Facebook" target="_blank"></a>
+							<a href="https://vk.com/zdravru" rel="nofollow" class="social__item social vk" title="VK" target="_blank"></a>
+							<a href="https://plus.google.com/105646243223642432985/posts" rel="nofollow" class="social__item social googleplus" title="Google+" target="_blank"></a>
+							<a href="https://twitter.com/zdrav_ru" rel="nofollow" class="social__item social twitter" title="Twitter" target="_blank"></a>
+							<a href="https://www.youtube.com/channel/UCVN1h898yPiKbGJFFsYOShw" rel="nofollow" class="social__item social youtube" title="Youtube" target="_blank"></a>
+						</div>
+			</noindex>
+						</div>
+					</div>
+					<!-- //social buttons here -->
+				</div>
+
+			</div>
+		</div>			
+	</section>
+		<!--Принять участие-->
+		<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>			
+			  <div class="modal-header">
+				<h5 class="modal-title">Принять участие в конкурсе могут подписчики и&nbsp;клиенты </h5>
+
+			  </div>
+			  <div class="modal-body">
+				<div class="row">
+					<div class="col-6">						
+						<a href="https://www.proflit.ru/meditsina-i-farmatsiya/zhurnaly/glavnaya-meditsinskaya-sestra-zhurnal-dlya-rukovoditeley-srednego-medpersonala" target="_blank">
+						<img src="images/gms-journal.png">
+						Журнала «Главная медицинская сестра»</a>					
+					</div>
+					<div class="col-6">												
+						<a href="https://vip.1glms.ru/about#partners" target="_blank">
+						<img src="images/gms-tablet.png">
+						Системы «Главная медсестра»</a>
+					</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		<!--Успех: работа загружена-->
+		<div class="modal fade" id="modalSuccess" tabindex="-1" role="dialog" aria-labelledby="fieldError" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>			
+			  <div class="modal-body">
+				<div class="success-message">Ваша работа успешно загружена!</div>
+			  </div>
+			</div>
+		  </div>
+		</div>		
+		
+		<!--Ошибка: не все поля заполнены-->
+		<div class="modal fade modal-error" id="modalFieldError" tabindex="-1" role="dialog" aria-labelledby="fieldError" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>			
+			  <div class="modal-body">
+				<div class="error-message">Не все обязательные поля заполнены.<br>Пожалуйста, заполните все обязательные поля.</div>
+			  </div>
+			</div>
+		  </div>
+		</div>	
+
+		<!--Ошибка: превышен размер файла-->
+		<div class="modal fade modal-error" id="modalFileSize" tabindex="-1" role="dialog" aria-labelledby="fileError" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>			
+			  <div class="modal-body">
+				<div class="error-message">Превышен размер загруженной работы.<br>Размер загружаемой работы не более 2&nbsp;МБ </div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<!--Ошибка: URL Youtube-->
+		<div class="modal fade modal-error" id="modalUrlError" tabindex="-1" role="dialog" aria-labelledby="urlError" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>			
+			  <div class="modal-body">
+				<div class="error-message">Некорректная ссылка на видео.<br>Пожалуйста, пропишите корректную ссылку.</div>
+			  </div>
+			</div>
+		  </div>
+		</div>		
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/script.js"></script>	
+
+	</body>
+</html>

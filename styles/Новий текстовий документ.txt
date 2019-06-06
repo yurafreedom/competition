@@ -1,0 +1,65 @@
+.test-wrap {
+	max-width: 850px;
+	padding: 3rem;
+	border-radius: 10px;
+	border: 1px solid #888;
+}
+.test-header {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+.test-caption {
+	margin-right: 20px;
+	color: #a18b54;
+	font-weight: bold;
+}
+.test-progress {
+	color: rgba(0,0,0,0.3);
+	font-size: 1rem;
+	margin-bottom: 1.2rem;
+}
+.test-content{
+	margin-bottom: 20px;
+}
+.test-option {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.checkbox.checked {
+	background: #a18b54;
+	border: 1px solid #a18b54;
+}
+.checkbox {
+	width: 20px;
+	height: 20px;
+	border: 1px solid #888;
+	margin-right: 30px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.test-option-text {
+	max-width: 90%;
+	line-height: 1.5rem;
+	font-size: 1rem;
+}
+.test-answer {
+	color: #fff;
+	background: #00979a;
+	font-size: 1.2rem;
+	padding: 5px 30px;
+	border-radius: 50px;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+.test-answer:hover {
+	color: #fff;
+	text-decoration: none;
+}
